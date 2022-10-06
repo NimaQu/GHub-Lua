@@ -11,7 +11,7 @@ Trigger = 5
 Duration = 90
 -- 持续时间，一般为复活时间，根据需要调整，到达时间后自动停止旋转并视角回正
 
-Rotational_speed = 10000
+Spinning_speed = 10000
 -- 旋转速度，越大越快
 
 Back_to_center = 1800
@@ -39,7 +39,7 @@ function OnEvent(event, arg)
         repeat
             PressKey("a")
             local ctrl_duration = math.random(Ctrl_duration_min, Ctrl_duration_max)
-            MoveMouseRelative(Rotational_speed, 0)
+            MoveMouseRelative(Spinning_speed, 0)
             if ctrl_count == Ctrl_interval then
                 PressKey(29)
             end

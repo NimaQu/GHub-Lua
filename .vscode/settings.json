@@ -5,6 +5,9 @@
         "OutputLogMessage",
         "MoveMouseRelative",
         "Sleep",
-        "IsMouseButtonPressed"
+        "IsMouseButtonPressed",
+        "PressAndReleaseKey",
+        "ReleaseKey",
+        "PressKey"
     ]
 }
